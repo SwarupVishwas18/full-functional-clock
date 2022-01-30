@@ -1,0 +1,62 @@
+<!-- 
+    HTML CODE FOR CLOCK
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Online Minimal Timer</title>
+     <meta name="description" content="Hey guys, welcome to the minimal and multi-themed timer, which purely fulfills it's purpose. That is, count down for you and rings amazingly..!!"/>
+
+     <!-- Links all -->
+     <link rel="stylesheet" href="./timer.css">
+     <script defer src="./theme.js"></script>
+     <script defer src="./timer.js"></script>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+ </head>
+ <body class="dark">
+     <nav class="navbar-container">
+        <ul class="navbar">
+            <li class="link"><a href="./index.html">Clock</a></li>
+            <li class="link"><a href="./timer.html">Timer</a></li>
+            <li class="link"><a href="./stopwatch.html">Stopwatch</a></li>
+            <li class="link" id="theme-btn">Light/Dark</li>
+        </ul>      
+     </nav>
+      <div class="timeInput">
+        <p>
+
+            <label for="min">Enter the minutes :</label>
+            <input type="number" value="0" name="min" id="min">
+            <label for="sec">Enter the seconds :</label>
+            <input type="number" value="0" name="sec" id="sec">
+        </p>
+
+        <p>
+           <button onclick="setup();" id="sub">Start The Timer</button>
+        </p>
+
+    </div>
+
+     <main class="time-container">
+         <!-- <input type="number" name="hr" id="hr" value="00">
+         <span class="separator">:</span>
+         <input type="number" name="min" id="min" value="00">
+         <span class="separator">:</span>
+         <input type="number" name="sec" id="sec" value="00"> -->
+        
+     </main>
+     
+
+     <footer>
+         <div class="name">
+             No &copy; Swarup Vishwas
+         </div>
+     </footer>
+ </body>
+ </html>

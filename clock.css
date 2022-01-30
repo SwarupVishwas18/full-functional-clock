@@ -1,0 +1,130 @@
+:root {
+    --gray0: #232426;
+    --green: #04BF68;
+    --brown0: #260816;
+    --brown1: #BF9270;
+    --brown2: #E3B7A0;
+    --brown3: #EDCDBB;
+    --brown4: #FFEDDB;
+
+}
+
+.light {
+    --bg-col: var(--brown4);
+    --global-col: var(--brown0);
+    --time-bg: var(--brown0);
+    --time-col: var(--brown2);
+    --btn-col: var(--brown2);
+    --btn-bg: var(--brown0);
+}
+
+.dark {
+    --bg-col: var(--gray0);
+    --global-col: var(--green);
+    --time-bg: var(--green);
+    --time-col: var(--gray0);
+    --btn-col: var(--gray0);
+    --btn-bg: var(--green);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-col);
+    color: var(--global-col);
+    font-family: 'Montserrat',
+    sans-serif;
+    transition: background-color 500ms ease-in-out,
+    color 1000ms ease-in-out;
+}
+
+.navbar-container {
+    height: 30vh;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 1.5rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.time-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    padding: 4rem;
+    background-color: var(--time-bg);
+    margin: 0 30rem;
+    border-radius: 2rem;
+    color: var(--time-col);
+    flex-direction: column;
+}
+
+.date{
+    font-size: 2rem;
+    margin-top: .7rem;
+    padding-top:.7rem;
+    border-top: 1px solid var(--bg-col);
+}
+
+footer {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: large;
+}
+
+footer a {
+    text-decoration: underline;
+    display: block;
+}
+
+.controllers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 3rem;
+    padding: 1rem 4rem;
+    font-size: large;
+    font-weight: bold;
+    border-radius: .5rem;
+    border: none;
+    color: var(--btn-col);
+    background-color: var(--btn-bg);
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: var(--btn-bg);
+    color: var(--btn-col);
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+#theme-btn{
+    cursor: pointer;
+}
+
+.link{
+    opacity: .5;
+}
+
+.link:hover{
+    opacity: 1;
+}
