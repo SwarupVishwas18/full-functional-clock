@@ -8,7 +8,7 @@ function convertSeconds(s) {
 }
 
 function convertMinutes(min, sec) {
-    if (min == 0 && sec == 0) {
+    if (min <= 0 && sec <= 0) {
         alert('Please specify the time..!!');
         return counter + 1;
     }

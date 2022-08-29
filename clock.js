@@ -1,12 +1,12 @@
 let timeContainer = document.querySelector('.time')
-
+let dateContainer = document.querySelector('.date')
 setInterval(function(){
     let dateObj = new Date();
     let sec = dateObj.getSeconds()
     let min = dateObj.getMinutes()
     let hr = dateObj.getHours()
     let year = dateObj.getFullYear()
-    let month = dateObj.getMonth()
+    let month = dateObj.getMonth()+1
     let date = dateObj.getDate()
 
     if(min<10){
@@ -19,4 +19,5 @@ setInterval(function(){
         hr= "0"+hr;
     }
     timeContainer.textContent = `${hr}:${min}:${sec}`
+    dateContainer.textContent = `${date}-${month}-${year}`
 },1000)
