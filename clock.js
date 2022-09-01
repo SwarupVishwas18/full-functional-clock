@@ -18,6 +18,12 @@ setInterval(function(){
     if(hr<10){
         hr= "0"+hr;
     }
+    if(date<10){
+        date= "0"+date;
+    }
+    if(month<10){
+        month= "0"+month;
+    }
     timeContainer.textContent = `${hr}:${min}:${sec}`
     dateContainer.textContent = `${date}-${month}-${year}`
 },1000)
